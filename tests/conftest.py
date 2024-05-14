@@ -66,14 +66,3 @@ def h_principal():
     }
 
     return headers
-
-@pytest.fixture
-def h_invalid_header():
-    headers = {
-        'X-Principal': json.dumps({
-            'student_id': 1,
-            'user_id': 5
-        })
-    }
-
-    return headers
